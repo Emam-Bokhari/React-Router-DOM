@@ -32,7 +32,7 @@ export default function RootLayout() {
           </ul>
         </nav>
       </div>
-      <div id="detail"></div>
+      <div id="detail">Hello World</div>
     </Fragment>
   );
 }

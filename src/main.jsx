@@ -8,11 +8,12 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <RootLayout/>,
+    
   }
 ]);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <RouterProvider router={router} />
-  </StrictMode>
+  </StrictMode> 
 );
