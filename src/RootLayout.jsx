@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import { Link, Outlet } from "react-router-dom";
 
 export default function RootLayout() {
   return (
@@ -24,15 +25,17 @@ export default function RootLayout() {
         <nav>
           <ul>
             <li>
-              <a href={`/contacts/1`}>Your Name</a>
+              <Link to={`/contact/1`}>Your Name</Link>
             </li>
             <li>
-              <a href={`/contacts/2`}>Your Friend</a>
+              <Link to={`/contact/2`}>Your Friend</Link>
             </li>
           </ul>
         </nav>
       </div>
-      <div id="detail">Hello World</div>
+      <div id="detail">
+        <Outlet/>
+      </div>
     </Fragment>
   );
 }
