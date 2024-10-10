@@ -4,10 +4,15 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Contact from "./Contact";
 import RootLayout from "./RootLayout";
 import "./index.css";
-import {  getContactsLoader } from "./loaders/contactsLoader";
+import { getContactsLoader } from "./loaders/contactsLoader";
 import ErrorPage from "./ErrorPage";
+// import Index from "./Index";
 
 const router = createBrowserRouter([
+  // {
+  //   index: true,
+  //   element: <Index />,
+  // },
   {
     path: "/",
     element: <RootLayout />,
